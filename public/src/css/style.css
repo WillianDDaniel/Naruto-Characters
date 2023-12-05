@@ -71,12 +71,12 @@ header {
 }
 
 .character_arrow {
-    width: 60px;
+    width: 90%;
     cursor: pointer;
 }
 
 .character_arrow:hover {
-    width: 65px;
+    width: 100%;
 }
 
 .character_search p {
@@ -84,7 +84,7 @@ header {
 }
 
 .profile_img {
-    width: 230px;
+    width: 54%;
     border-radius: 5px;
 }
 
@@ -178,7 +178,7 @@ header {
 }
 
 .extra_nav {
-    width: 85px;
+    width: 10%;
     height: 40%;
     background-color: var(--gray);
     border: var(--white) 1px solid;
@@ -193,17 +193,171 @@ header {
 }
 
 .extra_arrow {
-    width: 75px;
+    width: 90%;
     cursor: pointer;
 }
 
 .extra_arrow:hover {
-    width: 85px;
+    width: 100%;
 }
 
 .extra_img {
-    width: 550px;
+    width: 65%;
     height: auto;
     border-radius: 5px;
     border: var(--white) 2px solid;
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .resume_info p {
+        font-size: 0.85rem;
+    }
+
+    .character_info{
+        width: 40%;
+    }
+
+    .more_info {
+        width: 60%;
+    }
+
+    .more_info h2 {
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .more_info h3 {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    body {
+        margin-bottom: 220px;
+        height: auto;
+    }
+
+    .main_container {
+        flex-wrap: wrap;
+    }
+
+    .character_info{
+        width: 100%;
+        height: auto;
+    }
+
+    .more_info {
+        height: 60vh;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .more_info h2 {
+        margin-bottom: 80px;
+    }
+
+    .more_info h3 {
+        margin-top: 10%;
+    }
+
+    .more_info p {
+        margin-bottom: 600px;
+    }
+
+    .resume_info {
+        width: 70%;
+    }
+
+    .resume_info p {
+        font-size: 1rem;
+    }
+
+    .profile_img {
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    .character_search p {
+        margin: 10px 0 30px 0;
+    }
+
+    .additional_info {
+        margin-top: 40px;
+    }
+
+    .character_search > div {
+        /* width: 70%; */
+    }
+}
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .more_info h2 {
+        margin-bottom: 55px;
+    }
+
+    .more_info h3 {
+        margin-top: 50px;
+    }
+
+    .profile_img {
+        width: 65%;
+    }
+
+    .additional_info {
+        margin-top: 25px;
+    }
+
+    .resume_info {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    body {
+        margin-bottom: 150px;
+    }
+
+    .more_info h2 {
+        margin-bottom: 30px;
+    }
+
+    .more_info h3 {
+        margin-top: 30px;
+    }
+
+    .character_search {
+        width: 100%;
+    }
+
+    .profile_img {
+        width: 70%;
+    }
+
+    .profile_img_div {
+        width: 90%;
+    }
+
+    .additional_info {
+        margin-top: 20px;
+    }
+
+    .resume_info {
+        width: 90%;
+    }
+
+    .resume_info p {
+        font-size: 0.87rem;
+    }
 }
