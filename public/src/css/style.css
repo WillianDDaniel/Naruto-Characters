@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    
 }
 
 header {
@@ -84,7 +84,7 @@ header {
 }
 
 .profile_img {
-    width: 54%;
+    width: 65%;
     border-radius: 5px;
 }
 
@@ -94,7 +94,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: 0.9rem;
 }
 
@@ -175,6 +175,7 @@ header {
     padding: 15px;
     border-radius: 10px;
     font-size: 0.95rem;
+    margin-bottom: 15px;
 }
 
 .extra_nav {
@@ -237,7 +238,7 @@ header {
 @media screen and (max-width: 960px) {
 
     body {
-        margin-bottom: 220px;
+        /* margin-bottom: 220px; */
         height: auto;
     }
 
@@ -253,19 +254,21 @@ header {
     .more_info {
         height: 60vh;
         width: 100%;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .more_info h2 {
         margin-bottom: 80px;
+        font-size: 1.2rem;
     }
 
     .more_info h3 {
         margin-top: 10%;
     }
 
-    .more_info p {
-        margin-bottom: 600px;
+    .more_info {
+        padding-bottom: 10px;
+        height: auto;
     }
 
     .resume_info {
@@ -296,7 +299,7 @@ header {
 
 @media screen and (max-width: 760px) {
     h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .more_info h2 {
@@ -322,11 +325,7 @@ header {
 
 @media screen and (max-width: 540px) {
     h1 {
-        font-size: 1rem;
-    }
-
-    body {
-        margin-bottom: 150px;
+        font-size: 1.3rem;
     }
 
     .more_info h2 {
@@ -360,4 +359,49 @@ header {
     .resume_info p {
         font-size: 0.87rem;
     }
+}
+
+@media screen and (max-width: 420px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .resume_info {
+        width: 100%;
+        height: 40%;
+    }
+    .resume_info p {
+        font-size: 0.75rem;
+    }
+
+    .additional_info{
+        margin: -2px 0 15px 0;
+
+    }
+
+    .profile_img {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .resume_img {
+        display: none;
+    }
+
+    .resume_info {
+        height: auto;
+    }
+
+    .more_info p {
+        font-size: 0.8rem;
+        width: 95%;
+    }
+
+    .more_info h2 {
+        font-size: 1rem;
+    }
+
 }
