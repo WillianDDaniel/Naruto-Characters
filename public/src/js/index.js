@@ -32,7 +32,7 @@ const charactersModule = (function () {
     }
 
     async function fetchCharacters() {
-        const url = 'https://backend-naruto-info.vercel.app/characters'
+        const url = 'https://anime-characters-backend.vercel.app/characters-naruto'
 
         try {
             const response = await fetch(url)
