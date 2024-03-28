@@ -94,6 +94,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     margin-top: 20px;
     font-size: 0.9rem;
 }
@@ -105,6 +106,7 @@ header {
 
 .additional_info p:last-child {
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .additional_info h3 {
