@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./dist
+          source: ./public
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
@@ -44,7 +44,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
